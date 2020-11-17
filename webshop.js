@@ -21,7 +21,7 @@ function init(){
 function tablazatotKirajzol(e){
 console.log(e.target.tagName);
 if(e.target.tagName=="BUTTON" && e.target.name){
-    console(e.target.id);
+    console.log(e.target.id);
     id=parseInt(e.target.id);
     termek=Termekek.filter(obj => {return obj.id===id})
     console.log(Object.keys(termek));
