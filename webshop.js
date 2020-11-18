@@ -62,7 +62,7 @@ function TermekekMegjelenitese(){
     br=document.createElement("BR");
     div.appendChild(br);
     btn=document.createElement("BUTTON");
-    btn.innerHTML = "Megveszem";
+    btn.innerHTML = "Kosárba";
     btn.classList.add("btn");
     btn.classList.add("btn-success");
     btn.id=obj.id;
