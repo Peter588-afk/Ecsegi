@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
   <div class="container">
-      <a href="webshop.php" class="navbar-brand" id="text">WebShop</a>
+      <a href="webshop.html" class="navbar-brand" id="text">WebShop</a>
     <ul class="nav navbar-nav">
 
     <li class="dropdown">
@@ -74,84 +74,33 @@
 
 <!--termékek-->
 
-<div class="col-md-12">
-  <div class="row">
+<hr>
+
+<div class="container border p-3">
     <h2 class="text-center">Egy kis ízelítő a termékekből</h2>
-    <div class="col-md-4">
-        <h4 name="concord">Concord</h4>
-        <img src="images/utcai1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4 name="freak">Freak 2</h4>
-        <img src="images/kosar1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4 name="papucs">Jordan papucs</h4>
-        <img src="images/papucs1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
+      <div class="row shadow p-1 bg-light">
+        <div class="col-md-12">
+           <div class="table-responsive">
+                <div class="row" id="sor"></div>
+          </div>
+        </div>
+      </div>
 
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-        <h4>Póló</h4>
-        <img src="images/polo1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4>Pulóver</h4>
-        <img src="images/pulcsi1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4>Nadrág</h4>
-        <img src="images/nadrag1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-        <h4>Sapka</h4>
-        <img src="images/sapka1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4>Táska</h4>
-        <img src="images/taska1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-    <div class="col-md-4">
-        <h4>labda</h4>
-        <img src="images/labda1.jpg" class="images">
-        <p class="price text-success">Ár: 10.000Ft</p>
-        <button type="button" name="btn" class="btn btn-success" data-toggle="modal" data-target="details-1">Megveszem</button>
-    </div>
-
-</div>
-
-<div>
-    <hr>
-    
-    <div class="row" id="sor">
-
-    </div>
-<table><thead><th>Termék neve</th><th>Ára</th></thead>
-        <tbody id="tablazat">
-
-        </tbody>
-</table>
-</div>
+  <div class="container border p-3">
+    <h2 class="text-center">Koárba rakott termékek</h2>
+      <div class="row shadow p-1 bg-light">
+        <div class="col-md-12">
+           <div class="table-responsive">
+            <table class="table table-hover table-fixed-border" >
+                <thead><tr><th scope="col">Termék neve</th><th scope="col">Ára</th></tr></thead>
+                <tbody id="tablazat"></tbody>
+                <form method="post">
+                    <input type="submit" value="Insert" class=' btn btn-outline-light  m-1'>
+                </form>
+           </table>
+          </div>
+        </div>
+      </div>
 
 </div>
 </body>
