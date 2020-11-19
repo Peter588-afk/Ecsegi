@@ -10,7 +10,7 @@ $strKosar="";
 while($row=$stmt->fetch()){
   //print_r($row);
   //echo "<br>";
-  $strTable.="<div class='col-md-4'><h4>{$row['nev']}</h4><p class='price text-success'>{$row['ar']}</p><img src='{$row['foto']}' class='images'><br><button class='btn btn-success' name='gomb' value='{$row['id']}'>Kosárba</button></div>";
+  $strTable.="<div class='col-md-4'><h4>{$row['nev']}</h4></p><img src='{$row['foto']}' class='images'><p class='price text-success'>{$row['ar']}<br><button class='btn btn-success' name='gomb' value='{$row['id']}'>Kosárba</button></div>";
 }
 //print_r($_POST);
 if(isset($_POST['gomb'])){
