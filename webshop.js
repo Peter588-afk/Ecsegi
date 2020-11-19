@@ -10,7 +10,7 @@ t3=new Termek(3,"Papucs", 30000, "images/papucs1.jpg")
 t4=new Termek(4,"Polo", 40000, "images/polo1.jpg")
 t5=new Termek(5,"Pulcsi", 50000, "images/pulcsi1.jpg")
 t6=new Termek(6,"Nadrag", 60000, "images/nadrag1.jpg")
-t7=new Termek(7,"Sarka", 70000, "images/sapka1.jpg")
+t7=new Termek(7,"Sapka", 70000, "images/sapka1.jpg")
 t8=new Termek(8,"Taska", 80000, "images/taska1.jpg")
 t9=new Termek(9,"Labda", 90000, "images/labda1.jpg")
 Termekek=[t1,t2,t3,t4,t5,t6,t7,t8,t9]
@@ -19,7 +19,7 @@ window.addEventListener('load', init)
 
 function init(){
     console.log("OK");
-    TermekekMegjelenitese()
+    //TermekekMegjelenitese()
     //document.getElementsByName('btn').forEach(e=>addEventListener('click', kirajzol))
     document.addEventListener('click', tablazatotKirajzol)
 }
