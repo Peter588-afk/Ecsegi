@@ -55,7 +55,7 @@ if(isset($_SESSION['msg'])){
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
   <div class="container">
-      <a href="webshop.html" class="navbar-brand" id="text">WebShop</a>
+      <a href="web.php" class="navbar-brand" id="text">WebShop</a>
     <ul class="nav navbar-nav">
 
     <li class="dropdown">
